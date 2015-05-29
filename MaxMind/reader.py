@@ -35,7 +35,6 @@ class Reader(object):
 
 			header_string = f.readline()
 			for field in header_string.split(","):
-				print("%s" % (field))
 				header.append(field.rstrip())
 
 			for line in f:

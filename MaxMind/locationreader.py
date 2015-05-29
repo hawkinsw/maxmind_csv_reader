@@ -10,6 +10,5 @@ class LocationReader(reader.Reader):
 	def read(self):
 		locations = []
 		for l in self._read():
-			print(l)
 			locations.append(location.Location(**l))
 		return locations
