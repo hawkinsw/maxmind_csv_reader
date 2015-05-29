@@ -13,7 +13,7 @@ def smart_split(string, splitter):
 		elif f.endswith("\"") and not f.startswith("\""):
 			#Ending an escaped string.
 			temporary_split.append(f)
-			f = ",".join(temporary_split)
+			f = (splitter+" ").join(temporary_split)
 			temporary_split = []
 			in_escape = False
 
